@@ -17,3 +17,9 @@
 npm-debug.log
 testem.log
 .env
+
+# custom
+*.svg
+*.png
+*.csv
+tapes/

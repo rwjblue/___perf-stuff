@@ -13,7 +13,16 @@ svg(file = "boxplot.svg")
 boxplot(µs ~ set, data=samples)
 dev.off()
 
+png(file = "boxplot.png")
+boxplot(µs ~ set, data=samples)
+dev.off()
+
 require(lattice)
 svg(file = "histogram.svg")
+histogram(~µs | set, data=samples, breaks=nclass.FD)
+dev.off()
+
+require(lattice)
+png(file = "histogram.png")
 histogram(~µs | set, data=samples, breaks=nclass.FD)
 dev.off()
